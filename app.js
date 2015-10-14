@@ -3,6 +3,7 @@ var express = require('express');
 
 // Express settings
 var app = express();
+app.use(express.static('public'));
 
 //Template settings
 app.set('view engine', 'jade');
